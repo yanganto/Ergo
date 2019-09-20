@@ -16,6 +16,9 @@
     {% if extra.github %}
     <li class="button {{bsize}} font_faint"><a href="https://github.com/{{extra.github}}" target="_blank" >{{extra.github}}</a><i class="fab fa-github" ></i></li>
     {% endif %}
+    {% if extra.facebook %}
+    <li class="button {{bsize}} font_faint"><a href="https://www.facebook.com{{extra.facebook}}" target="_blank">{{extra.facebook}}</a><i class="fab fa-facebook" ></i></li>
+    {% endif %}
     {% if extra.twitter %}
     <li class="button {{bsize}} font_faint"><a href="https://twitter.com/{{extra.twitter}}" target="_blank">@{{extra.twitter}}</a><i class="fab fa-twitter" ></i></li>
     {% endif %}
@@ -30,6 +33,9 @@
     {% endif %}
     {% if extra.email %}
     <li class="button {{bsize}} font_faint"><a href="mailto:{{extra.email}}?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+    {% endif %}
+    {% if extra.cv %}
+    <li class="button {{bsize}} font_faint"><a href="{{siteurl}}/file/{{extra.cv}}" target ="_blank">cv</a><i class="fas fa-file-alt" ></i></li>
     {% endif %}
     {% if rss %}
     <li class="button {{bsize}} font_faint"><a href="{{siteurl}}/rss.xml" target ="_blank">rss</a><i class="fas fa-rss" ></i></li>
@@ -73,6 +79,9 @@
             {% if extra.github %}
             <li><a href="https://github.com/{{extra.github}}" target="_blank" >{{extra.github}}</a><i class="fab fa-github" ></i></li>
             {% endif %}
+            {% if extra.facebook %}
+            <li><a href="https://www.facebook.com{{extra.facebook}}" target="_blank">@{{extra.facebook}}</a><i class="fab fa-facebook" ></i></li>
+            {% endif %}
             {% if extra.twitter %}
             <li><a href="https://twitter.com/{{extra.twitter}}" target="_blank">@{{extra.twitter}}</a><i class="fab fa-twitter" ></i></li>
             {% endif %}
@@ -87,6 +96,9 @@
             {% endif %}
             {% if extra.email %}
             <li><a href="mailto:{{extra.email}}?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+            {% endif %}
+            {% if extra.cv %}
+            <li><a href="{{siteurl}}/file/{{extra.cv}}" target ="_blank">cv</a><i class="fas fa-file-alt" ></i></li>
             {% endif %}
             {% if rss %}
             <li><a href="{{siteurl}}/rss.xml" target ="_blank">rss</a><i class="fas fa-rss" ></i></li>

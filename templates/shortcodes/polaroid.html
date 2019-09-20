@@ -1,0 +1,10 @@
+<div class="polaroid {% if class %}{{class}}{% endif %}">
+  <img src="/img/{{f}}" style="width:100%" {% if desc %}alt="{{desc}}"{% endif %}/>
+  <div class="container">
+  {% if desc %}
+    <p>{{desc}}</p>
+  {% else %}
+    <p></p>
+  {% endif %}
+  </div>
+</div>

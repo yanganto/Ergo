@@ -6,5 +6,5 @@ min_version = "0.4.1"
 demo = "https://ergo.liquidthink.net"
 
 [author]
-name = "Andrew Plaza"
-homepage = "https://code.liquidthink.net"
+name = ["Andrew Plaza", "Antonio Yang"]
+homepage = ["https://code.liquidthink.net",  "https://www.ant-lab.tw"]
