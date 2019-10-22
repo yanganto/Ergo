@@ -1,0 +1,7 @@
+<table class="paycoin">
+{% if desc %}
+  <tr><th colspan="2"><i class="fas fa-pastafarianism"></i> {{desc}} <i class="fab fa-reddit-alien"></i></th></tr>
+{% endif %}
+  <tr onclick='copy2Clip("{{btc}}")'><td><i class="fab fa-bitcoin"></i><span> btc</span></td><td>{{btc}}</td></tr>
+  <tr onclick='copy2Clip("{{eth}}")'><td><i class="fab fa-ethereum"></i><span> eth</span></td><td>{{eth}}</td></tr>
+</table>

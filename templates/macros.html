@@ -40,6 +40,12 @@
     {% if extra.website %}
     <li class="button {{bsize}} font_faint"><a href="https://{{extra.website}}" target="_blank">{{extra.website}}</a><i class="far fa-window-maximize" ></i></li>
     {% endif %}
+    {% if extra.btc %}
+    <li class="button {{bsize}} font_faint tooltip" onclick='copy2Clip("{{extra.btc}}")' ><span>btc</span><i class="fab fa-bitcoin"></i></li>
+    {% endif %}
+    {% if extra.eth %}
+    <li class="button {{bsize}} font_faint tooltip" onclick='copy2Clip("{{extra.eth}}")' ><span>eth</span><i class="fab fa-ethereum"></i></li>
+    {% endif %}
 </ul>
 {% endmacro social_list %}
 
@@ -102,6 +108,12 @@
             {% endif %}
             {% if extra.website %}
             <li><a href="https://{{extra.website}}" target="_blank">{{extra.website}}</a><i class="far fa-window-maximize" ></i></li>
+            {% endif %}
+            {% if extra.btc %}
+            <li onclick='copy2Clip("{{extra.btc}}")' ><span>btc</span><i class="fab fa-bitcoin"></i></li>
+            {% endif %}
+            {% if extra.eth %}
+            <li onclick='copy2Clip("{{extra.eth}}")' ><span>eth</span><i class="fab fa-ethereum"></i></li>
             {% endif %}
         </ul>
     </div>
